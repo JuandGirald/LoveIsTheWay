@@ -169,6 +169,11 @@
         </div>
       </div>
       <div class="col-sm-8 col-md-8 formulario">
+        <%= render 'shared/error_messages', object: @message %>
+        <% flash.each do |key, value| %>
+          <div class="alert alert-<%= key %>"><%= value %></div>
+        <% end %>
+        
         <form accept-charset="UTF-8" action="/" id="new_message" method="post" class="new_message contact">
           <input name="authenticity_token" type="hidden" value="<%= form_authenticity_token %>" />
           <input type="text" class="form-control" name="message[name]" id="message_name" placeholder="John Stuart" required>
