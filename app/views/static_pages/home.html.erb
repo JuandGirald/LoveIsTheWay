@@ -76,7 +76,27 @@
             <%= image_tag "servicio_born.jpg"%>
           </div>
           <div class="show-text">
-            <span class="acesco">Born to be free</span>
+            <span type="button" class="btn btn-primary " data-toggle="modal" data-target="#myModal">
+              Baile de Esencia
+            </span>
+
+            <!-- Modal -->
+            <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+              <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                    <h4 class="modal-title" id="myModalLabel">Baile de Esencia</h4>
+                  </div>
+                  <div class="modal-body">
+                    Cada mujer tiene una esencia única y es desde nuestra niñez que vamos descubriendo cúal es ella, sin embargo a veces estamos distraidos y se nos olvida mirar hacia adentro. Esta sesión busca identificar esa esencia a través del coaching y poder inspirarnos y fluir por medio del baile.
+                  </div>
+                  <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
         </li>
         <li class="empresa2 col-lg-4 col-md-4 col-sm-4 col-xs-12">
@@ -84,7 +104,27 @@
             <%= image_tag "servicio_maquillaje.jpg"%>
           </div>
           <div class="show-text">
-            <span class="carel">Maquillaje</span>
+            <span type="button" class="btn btn-primary " data-toggle="modal" data-target="#myModal2">
+              Maquillaje Para el Alma
+            </span>
+
+            <!-- Modal -->
+            <div class="modal fade" id="myModal2" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+              <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                    <h4 class="modal-title" id="myModalLabel">Maquillaje Para el Alma</h4>
+                  </div>
+                  <div class="modal-body">
+                    Todas las personas tenemos un propósito de vida que cumplir, el cual podemos identificar a través de metodologias educativas, está sesión nace con el fin de trabajar en ese propósito y combinarlo también con el maquillaje profesional. Las mujeres queremos revelar la belleza y no solo cultivar nuestro interior sino también nuestro exteerior para dar una buena imagen ante el mundo que nos rodea.
+                  </div>
+                  <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
         </li>
         <li class="empresa3 col-lg-4 col-md-4 col-sm-4 col-xs-12">
@@ -92,35 +132,33 @@
             <%= image_tag "servicio_noche.jpg"%>
           </div>
           <div class="show-text">
-            <span class="carrier">Noche love</span>
+            <span type="button" class="btn btn-primary " data-toggle="modal" data-target="#myModal3">
+              Noche Love
+            </span>
+
+            <!-- Modal -->
+            <div class="modal fade" id="myModal3" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+              <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                    <h4 class="modal-title" id="myModalLabel">Novhe Love</h4>
+                  </div>
+                  <div class="modal-body">
+                    Todas las personas tenemos sueñor por cumplir y a vecer creemos que podemos llegar a alcanzarlos solos, pero necesitamos descubrir que para llegar lejos necesitamos un equipo de apoyo y tanto en nuestra adolescencia como en nuestra juventud es la familia el mejor equipo para alcanzar todos y cada uno de nuestros sueños. Esta sesión nace con el fin de trabajar el lazo familiar y en el apoyo de cada uno de sus miembros para alcanzar lo que se propongan.
+                  </div>
+                  <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
         </li>
       </ul>
     </div>
     <!-- Button trigger modal -->
     <!-- Button trigger modal -->
-    <button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#myModal">
-      Launch demo modal
-    </button>
-
-    <!-- Modal -->
-    <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
-      <div class="modal-dialog" role="document">
-        <div class="modal-content">
-          <div class="modal-header">
-            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-            <h4 class="modal-title" id="myModalLabel">Modal title</h4>
-          </div>
-          <div class="modal-body">
-            ...
-          </div>
-          <div class="modal-footer">
-            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-            <button type="button" class="btn btn-primary">Save changes</button>
-          </div>
-        </div>
-      </div>
-    </div>
     
     <div class="row">
       <h3 id="serviciosM">SERVICIOS EMPRESARIALES</h3>
@@ -173,7 +211,7 @@
         <% flash.each do |key, value| %>
           <div class="alert alert-<%= key %>"><%= value %></div>
         <% end %>
-        
+
         <form accept-charset="UTF-8" action="/" id="new_message" method="post" class="new_message contact">
           <input name="authenticity_token" type="hidden" value="<%= form_authenticity_token %>" />
           <input type="text" class="form-control" name="message[name]" id="message_name" placeholder="John Stuart" required>

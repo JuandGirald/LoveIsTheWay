@@ -326,7 +326,7 @@ header .navbar-header .icon-bar{
 	}
 
 	#servicios .show-text span {
-	    margin: 11% auto 0 auto !important;
+		margin: 11% auto 0 auto !important;
 	}
 }
 
@@ -461,6 +461,8 @@ header .navbar-header .icon-bar{
 
 
 #servicios .show-text span{
+	border: none;
+	border-radius: none;
 	display: block;
 	margin: 35% auto 0 auto;
 	text-align: center;
@@ -493,7 +495,7 @@ color: #555 !important;
 #contactanos {
 	background-size: 100vw;
 	height: 673px;
-	padding-top: 150px;
+	padding-top: 80px;
 }
 
 #contactanos h3 {
