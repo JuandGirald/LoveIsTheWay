@@ -1,14 +1,26 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>LoveIsTheWay</title>
+  <title>Love is the way</title>
+  <meta name="keywords" content="fundación, mujer, medellin, valores" />
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <link rel="stylesheet" href="assets/bootstrap.css">
+  <link rel="stylesheet" href="assets/swiper.min.css">
+  <link rel="stylesheet" href="assets/main.css">
+
   <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
   <%= csrf_meta_tags %>
 </head>
 <body>
 
-<%= yield %>
+  <%= yield %>
 
+  <script type="text/javascript" src="assets/swiper.jquery.min.js"></script>
+  <script type="text/javascript" src="assets/parallax.min.js"></script>
+  <script type="text/javascript" src="assets/main.js"></script>
+  <script type="text/javascript" src="assets/bootstrap.min.js"></script>
+  
 </body>
 </html>

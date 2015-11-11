@@ -12,5 +12,9 @@
 //
 //= require jquery
 //= require jquery_ujs
+//= require bootstrap.min
+//= require parallax.min
+//= require main
+//= require swiper.jquery.min
 //= require turbolinks
 //= require_tree .
